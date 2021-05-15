@@ -8,6 +8,8 @@
 	--gray-violet: hsl(257, 7%, 63%);
 	--dark-violet-1: hsl(257, 27%, 26%);
 	--dark-violet-2: hsl(260, 8%, 14%);
+
+	/********/
 }
 
 /********************************************************/
@@ -24,7 +26,6 @@ body {
 }
 body {
 	width: 100vw;
-	height: 100vh;
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
@@ -86,9 +87,6 @@ header.flex-cc {
 #nav_ul li {
 	padding: 0 15px;
 }
-#nav_ul li:first-child {
-	padding-left: 0;
-}
 
 #nav_ul a {
 	color: var(--gray-violet);
@@ -126,6 +124,10 @@ header.flex-cc {
 	/* background: rgba(255,255,255,0.4); *
 }
 */
+
+/******************************************************/
+
+/******************************************************/
 
 #menu {
 	display: none;
@@ -172,17 +174,60 @@ header.flex-cc {
 section {
 	min-height: 100vh;
 }
+section * {
+	background: rgba(0, 0, 0, 0.1);
+}
 
 /********************************************************/
 
 /********************************************************/
 
-#stats {
-	margin: 0;
-	margin-top: 0px;
-	padding: 120px 10vw;
-	background: hsl(0, 0%, 96%);
+#project-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-gap: 40px 40px;
+}
+.project-tile {
+	border-radius: 5px;
+	color: #222;
+	box-shadow: 2px 2px 3px -1px #222;
+	transition: transform 100ms ease-in-out, color 100ms ease-out;
+
+	display: flex;
+	flex-flow: column nowrap;
 	align-items: center;
+}
+.project-tile:hover {
+	transform: scale(1.03);
+	color: #444;
+}
+.project-img {
+	width: 100%;
+}
+.img-caption {
+	padding: 10px 5px;
+}
+a[id="view-all"] {
+	background: #222;
+	color: rgb(180, 250, 200);
+	padding: 10px 15px;
+	margin: 30px 0;
+	border-radius: 5px;
+	font-weight: 400;
+	transition: transform 120ms ease-out, color 120ms ease-out;
+
+	align-self: center;
+}
+a[id="view-all"]:hover {
+	transform: scale(1.03);
+	color: rgb(140, 200, 255);
+}
+a[id="view-all"] i {
+	transition: margin-left 120ms ease-out;
+}
+a[id="view-all"]:hover i {
+	margin-left: 3px;
 }
 
 /********************************************************/
@@ -243,19 +288,19 @@ footer #social_nav img:hover {
 
 /********************************************************/
 
-#back2top {
+#back2Top {
 	display: none;
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	right: 40px;
-	background: #222;
-	border: 2px solid whitesmoke;
-	border-radius: 6px;
 }
-#back2top button {
+#back2Top button {
 	width: 40px;
 	height: 40px;
 	color: whitesmoke;
+	background: #222;
+	border: 2px solid whitesmoke;
+	border-radius: 6px;
 	font-size: 18px;
 	justify-content: center;
 }
@@ -339,9 +384,8 @@ footer #social_nav img:hover {
 		display: flex;
 	}
 
-	#landing.flex-cc {
-		flex-flow: column-reverse nowrap;
-		align-items: stretch;
+	#project-grid {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -351,6 +395,11 @@ footer #social_nav img:hover {
 	body {
 		font-size: 16px;
 	}
+
+	#project-grid {
+		grid-template-columns: 1fr;
+	}
+
 	footer div h4.flex-cc {
 		justify-content: center;
 	}
