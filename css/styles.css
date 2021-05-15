@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+:root {
+	--cyan: hsl(180, 66%, 49%);
+	--gray: hsl(0, 0%, 75%);
+	--red: hsl(0, 87%, 67%);
+	--dark-blue: hsl(255, 11%, 22%);
+	--gray-violet: hsl(257, 7%, 63%);
+	--dark-violet-1: hsl(257, 27%, 26%);
+	--dark-violet-2: hsl(260, 8%, 14%);
+}
+
+/********************************************************/
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	/* background: chartreuse; */
+}
+.flex-cc {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.col {
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: var(--gray);
+}
+button {
+	cursor: pointer;
+}
+
+header,
+footer {
+	padding: 0 10vw;
+}
+section {
+	margin: 0 10vw;
+}
+
+/********************************************************/
+
+header.flex-cc {
+	justify-content: space-between;
+	margin: 46px 0;
+}
+
+#logo_a {
+	color: black;
+	margin: 0;
+	font-weight: bold;
+}
+
+#nav_ul {
+	padding: 0;
+	flex: 2 1 auto;
+	justify-content: flex-start;
+}
+#nav_ul li {
+	margin: 0;
+	justify-content: center;
+}
+#nav_ul li {
+	padding: 0 15px;
+}
+#nav_ul li:first-child {
+	padding-left: 0;
+}
+
+#nav_ul a {
+	color: var(--gray-violet);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	height: 100%;
+	/* padding: 10px 6px; */
+	flex: 2 1 auto;
+	justify-content: center;
+}
+#nav_ul a:hover {
+	color: black;
+}
+
+/*
+#signup_li {
+	background: var(--cyan);
+	border-radius: 22px;
+}
+#signup_li {
+	transition: filter 100ms ease-in-out;
+}
+#signup_li:hover {
+	filter: brightness(1.13);
+}
+#signup_li a {
+	color: white;
+	background: transparent;
+	padding: 10px 22px;
+	transition: background 100ms ease-in-out;
+}
+#signup_li a:hover {
+	color: white;
+	/* background: rgba(255,255,255,0.4); *
+}
+*/
+
+#menu {
+	display: none;
+	cursor: pointer;
+	padding: 0;
+	height: 40px;
+	border: 0;
+	border-radius: 3px;
+	background: transparent;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+#menu:hover,
+#menu:focus {
+	background: rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+#menu svg {
+	background: transparent;
+}
+#menu svg g {
+	fill: var(--dark-violet);
+}
+#menu svg g rect {
+	transition: transform 100ms ease-in-out;
+	transform-origin: 50% 50%;
+}
+/* #menu svg g rect{
+} */
+#menu g.cross #rect1 {
+	transform: translateX(-14px) translateY(14px) rotate(45deg);
+}
+#menu g.cross #rect2 {
+	transform: translateX(-100px);
+	height: 0;
+}
+#menu g.cross #rect3 {
+	transform: translateX(-14px) translateY(-14px) rotate(-45deg);
+}
+
+/**********************************************/
+
+section {
+	min-height: 100vh;
+}
+
+/********************************************************/
+
+/********************************************************/
+
+#stats {
+	margin: 0;
+	margin-top: 0px;
+	padding: 120px 10vw;
+	background: hsl(0, 0%, 96%);
+	align-items: center;
+}
+
+/********************************************************/
+
+#land2 {
+	margin: 0;
+	background: var(--dark-violet-1);
+}
+
+/********************************************************/
+
+footer.flex-cc {
+	color: var(--gray);
+	background: var(--dark-violet-2);
+	padding: 80px 10vw;
+	justify-content: stretch;
+	align-items: flex-start;
+}
+footer div {
+	width: 100%;
+}
+footer div > * {
+	margin: 0;
+}
+footer div h4 {
+	font-size: 24px;
+}
+
+footer nav {
+	align-items: center;
+}
+footer nav p {
+	margin: 0;
+	margin-right: 20px;
+}
+footer nav ul li {
+	margin: 6px 0;
+}
+footer nav ul li {
+	margin: 0 6px;
+}
+footer nav ul li a {
+	font-size: 30px;
+}
+
+/* footer nav a{
+    transition: color 100ms ease-in-out;
+} */
+footer nav a:hover {
+	color: var(--cyan);
+}
+/*
+footer #social_nav img:hover {
+	filter: sepia(86%) saturate(1564%) hue-rotate(126deg) brightness(86%)
+		contrast(88%);
+}
+*/
+
+/********************************************************/
+
+#back2top {
+	display: none;
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+	background: #222;
+	border: 2px solid whitesmoke;
+	border-radius: 6px;
+}
+#back2top button {
+	width: 40px;
+	height: 40px;
+	color: whitesmoke;
+	font-size: 18px;
+	justify-content: center;
+}
+
+/********************************************************/
+/* Media Queries */
+
+@media (max-width: 1100px) {
+	footer.flex-cc {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+	footer nav.flex-cc {
+		align-items: center;
+	}
+	footer nav ul.flex-cc {
+		align-items: center;
+	}
+}
+
+/********************************************************/
+
+@media (max-width: 900px) {
+	header,
+	footer {
+		padding: 0 max(40px, 10vw);
+	}
+	section {
+		margin: 0 10vw;
+		/* Add Same amount of padding to form */
+	}
+
+	header #logo_a {
+		margin-right: auto;
+	}
+	#logo_a h1 {
+		margin: 0;
+	}
+	#nav_el {
+		--w: 100vw;
+		--h: 100vh;
+		position: absolute;
+		transform: translateY(calc(-1 * var(--h)));
+		top: 0;
+		left: 0;
+		width: var(--w);
+		height: var(--h);
+		/* padding-top: 50px; */
+		background: rgba(255, 255, 255, 0.88);
+		transition: transform 120ms ease-in-out;
+	}
+	#nav_el.open {
+		transform: translateY(0);
+	}
+	#nav_el ul {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+	#nav_el#nav_el ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#nav_el ul li a {
+		padding: min(4vh, 30px);
+		font-size: 30px;
+		justify-content: center;
+	}
+	#nav_el ul li a {
+		transition: background 100ms ease-in-out, color 100ms ease-in-out;
+	}
+	#nav_el ul li a:hover {
+		background: rgba(0, 0, 0, 0.1);
+	}
+	/*
+	#signup_li {
+		border-radius: 0;
+	}
+	*/
+	#menu {
+		display: flex;
+	}
+
+	#landing.flex-cc {
+		flex-flow: column-reverse nowrap;
+		align-items: stretch;
+	}
+}
+
+/********************************************************/
+
+@media (max-width: 720px) {
+	body {
+		font-size: 16px;
+	}
+	footer div h4.flex-cc {
+		justify-content: center;
+	}
+	footer nav {
+		flex-flow: column nowrap;
+	}
+	footer nav p {
+		margin: 16px 0 8px 0;
+	}
+}
