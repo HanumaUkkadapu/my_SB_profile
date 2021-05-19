@@ -6,12 +6,7 @@ let root,
 	typeHead,
 	x = 0,
 	str,
-	go2Top,
-	go2TopBtn,
-	dsp,
-	prevYPos = -1,
-	currYPos,
-	flag = false;
+	dsp;
 
 /*
     //console.log(typeof typeHead.textContent,typeHead.textContent.length);
@@ -20,27 +15,6 @@ let root,
 
 window.addEventListener("DOMContentLoaded", () => {
 	init();
-	/*
-	window.addEventListener("scroll", () => {
-		currYPos = root.scrollTop;
-		console.log(currYPos,prevYPos);
-		if (prevYPos < currYPos && currYPos > 900 && !flag) {
-			go2Top.style.display = "flex";
-			flag = !flag;
-		} else if (prevYPos > currYPos && currYPos < 900 && flag) {
-			go2Top.style.display = "none";
-			flag = !flag;
-		}
-		//console.log(currYPos, prevYPos);
-		prevYPos = currYPos;
-		/*
-  if(window.pageYOffset > 600) go2Top.style.display = 'block';
-  else go2Top.style.display = 'none';
-  */
-	});
-	go2TopBtn.addEventListener("click", () => {
-		root.scrollTop = 0;
-	});
 
 	menuBtn.addEventListener("click", () => {
 		menuBtn.classList.toggle("open");
@@ -74,8 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		"--vw-all-hvr-brd-clr",
 		"--pht-brd-clr",
 		"--ftr-clr",
-		"--ftr-nav-hvr-clr",
-		"--b2t-hvr-clr"
+		"--ftr-nav-hvr-clr"
 	];
 	const theme = {
 		dark: [
@@ -98,8 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"rgba(255, 255, 255, 0.3)",
 			"rgba(255, 255, 255, 0.08)",
 			"#8aa678",
-			"#b1d59b",
-			"rgba(255, 255, 255, 0.2)"
+			"#b1d59b"
 		],
 		light: [
 			"#c5edac",
@@ -121,8 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"rgba(0, 0, 0, 0.3)",
 			"rgba(0, 0, 0, 0.08)",
 			"#493548",
-			"rgba(255, 255, 255, 0.7)",
-			"#b1d59b"
+			"rgba(255, 255, 255, 0.7)"
 		]
 	};
 	const swIp = document.getElementById("switchInput");
@@ -145,8 +116,6 @@ function init() {
 	menuBtn = document.getElementById("menu");
 	typeHead = document.getElementById("typing");
 	str = "Web Developer";
-	go2Top = document.getElementById("back2Top");
-	go2TopBtn = document.querySelector("#back2Top button");
 }
 
 async function startTyping() {
