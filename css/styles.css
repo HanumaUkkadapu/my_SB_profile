@@ -442,6 +442,7 @@ section:not(#landing) > h1 {
 .project-tile {
 	position: relative;
 	font-size: 16px;
+	text-align: center;
 	color: var(--body-clr);
 	background: var(--body-bg);
 	filter: var(--prj-tl-fltr);
