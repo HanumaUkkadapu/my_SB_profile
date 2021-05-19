@@ -29,7 +29,6 @@
 	--sec-h-bg: #91C16C;
 	--prj-tl-ol-clr: rgba(22, 22, 22, 0.6);
 	--prj-tl-fltr: brightness(1);
-	--vw-all-hvr-brd-clr: rgba(0, 0, 0, 0.3);
 	--pht-brd-clr: rgba(0, 0, 0, 0.08);
 	--ftr-clr: #493548;
 	--ftr-nav-hvr-clr: rgba(255, 255, 255, 0.7);
@@ -495,7 +494,7 @@ section:not(#landing) > h1 {
 	transform: scale(1.03);
 }
 #view-all:focus {
-	border-color: var(--vw-all-hvr-brd-clr);
+	border-color: rgba(0, 0, 0, 0.3);
 }
 #view-all i {
 	transition: margin-left 120ms ease-out;
