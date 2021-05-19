@@ -2,6 +2,7 @@
 
 :root {
 	--lt-green: #c5edac;
+	--lt-green-2: #91C16C;
 	--dr-green: #b1d59b;
 	--orange-1: #ffb833;
 	--lt-yellow: #ffd599;
@@ -23,7 +24,7 @@
 	--mn-hvr-bg: rgba(0, 0, 0, 0.1);
 	--cta-hvr: brightness(1.06);
 	--cta-fcs-clr: #cc9329;
-	--sec-h-bg: #b1d59b;
+	--sec-h-bg: #91C16C;
 	--prj-tl-ol-clr: rgba(22, 22, 22, 0.6);
 	--prj-tl-fltr: brightness(1);
 	--vw-all-hvr-brd-clr: rgba(0, 0, 0, 0.3);
