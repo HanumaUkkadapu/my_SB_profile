@@ -44,7 +44,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		"--cta-fcs-clr",
 		"--prj-tl-ol-clr",
 		"--prj-tl-fltr",
-		"--vw-all-hvr-brd-clr",
 		"--pht-brd-clr",
 		"--ftr-clr",
 		"--ftr-nav-hvr-clr"
@@ -66,7 +65,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			"#805c1a",
 			"rgba(255, 255, 255, 0.6)",
 			"brightness(0.85)",
-			"rgba(255, 255, 255, 0.3)",
 			"rgba(255, 255, 255, 0.08)",
 			"#91C16C",
 			"#b1d59b"
@@ -87,7 +85,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			"#cc9329",
 			"rgba(22, 22, 22, 0.6)",
 			"brightness(1)",
-			"rgba(0, 0, 0, 0.3)",
 			"rgba(0, 0, 0, 0.08)",
 			"#493548",
 			"rgba(255, 255, 255, 0.7)"
