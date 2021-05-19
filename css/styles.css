@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Archivo&display=swap");
 
 :root {
 	--lt-green: #c5edac;
@@ -57,9 +57,10 @@ body {
 	width: 100vw;
 	color: var(--body-clr);
 	background: var(--body-bg);
-	font-family: "Poppins", sans-serif;
+	font-family: "Archivo", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
+	line-height: 1.5em;
 	/* background: chartreuse; */
 }
 body.menu-open {
@@ -100,7 +101,9 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "Poppins", sans-serif;
 	font-weight: 700;
+	line-height: initial;
 }
 
 header,
@@ -160,6 +163,7 @@ header.flex-cc {
 	color: var(--gray-violet);
 	border: 3px solid transparent;
 	text-decoration: none;
+	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	flex: 2 1 auto;
@@ -398,6 +402,7 @@ section:not(#landing) > h1 {
 	border: 4px solid var(--acc-clr-2);
 	padding: 10px 22px 10px 20px;
 	margin-top: 20px;
+	font-family: "Poppins", sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	transition: filter var(--dur) ease-in;
@@ -492,6 +497,12 @@ section:not(#landing) > h1 {
 }
 #view-all:hover i {
 	margin-left: 3px;
+}
+
+/********************************************************/
+
+#skills a:focus{
+	text-decoration: underline;
 }
 
 /********************************************************/
