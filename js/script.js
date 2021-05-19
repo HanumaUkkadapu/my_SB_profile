@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"rgba(255, 255, 255, 0.2)",
 			"brightness(0.94)",
 			"#805c1a",
-			"#4f5f45",
+			"rgb(80, 120, 50)",
 			"rgba(255, 255, 255, 0.6)",
 			"brightness(0.85)",
 			"rgba(255, 255, 255, 0.3)",
