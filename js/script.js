@@ -43,7 +43,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		"--cta-hvr",
 		"--cta-fcs-clr",
 		"--prj-tl-ol-clr",
-		"--prj-tl-fltr",
 		"--pht-brd-clr",
 		"--ftr-clr",
 		"--ftr-nav-hvr-clr"
@@ -64,7 +63,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			"brightness(0.94)",
 			"#805c1a",
 			"rgba(255, 255, 255, 0.6)",
-			"brightness(0.85)",
 			"rgba(255, 255, 255, 0.08)",
 			"#91C16C",
 			"#b1d59b"
@@ -84,7 +82,6 @@ window.addEventListener("DOMContentLoaded", () => {
 			"brightness(1.06)",
 			"#cc9329",
 			"rgba(22, 22, 22, 0.6)",
-			"brightness(1)",
 			"rgba(0, 0, 0, 0.08)",
 			"#493548",
 			"rgba(255, 255, 255, 0.7)"
