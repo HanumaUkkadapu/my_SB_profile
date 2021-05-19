@@ -133,7 +133,7 @@ header.flex-cc {
 
 #logo_a {
 	margin: 0;
-	color: var(--hdr-clr);
+	color: black;
 }
 #logo_a:hover,
 #logo_a:focus {
