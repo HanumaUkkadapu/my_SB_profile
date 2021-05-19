@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio | Hanuma Ukkadapu</title>
-	<!--<link rel="icon" type="image/png" href="./images/favicon-32x32.png">-->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -18,19 +18,25 @@
 		<nav id="nav_el" class="flex-cc">
 			<ul id="nav_ul" class="flex-cc">
 				<li class="flex-cc">
-					<a href="#about" class="flex-cc">About</a>
+					<a href="#projects" class="flex-cc"><i class="fas fa-briefcase"></i>Projects</a>
 				</li>
 				<li class="flex-cc">
-					<a href="#projects" class="flex-cc">Projects</a>
+					<a href="#education" class="flex-cc"><i class="fas fa-university"></i>Education</a>
 				</li>
 				<li class="flex-cc">
-					<a href="#education" class="flex-cc">Education</a>
+					<a href="#skills" class="flex-cc"><i class="fas fa-tools"></i>Skillset</a>
 				</li>
 				<li class="flex-cc">
-					<a href="#skills" class="flex-cc">Skillset</a>
+					<a href="#about" class="flex-cc"><i class="fas fa-user-circle"></i>About</a>
 				</li>
 				<li class="flex-cc">
-					<a href="#contact" class="flex-cc">Contact</a>
+					<a href="#contact" class="flex-cc"><i class="fas fa-handshake"></i>Contact</a>
+				</li>
+				<li class="flex-cc" id="switchWrap">
+					<label class="switch">
+						<input id="switchInput" type="checkbox">
+						<span class="slider"></span>
+					</label>
 				</li>
 			</ul>
 		</nav>
@@ -46,82 +52,159 @@
 	</header>
 
 	<main class="flex-cc col">
-		<section class="flex-cc col" id="about">
-			<h1>About</h1>
-			<div class="flex-cc">
-				<img src="image.png" alt="a passport photo">
-				<div>
-					<h3>About Me</h3>
-					<p>lorem Ipsum</p>
-					<p>Lorem Ipsum</p>
-				</div>
-			</div>
+
+		<section class="flex-cc col" id="landing">
+			<h1 id="land-head">Hey, I am Hanuma</h1>
+			<h3 id="typingWrap" class="flex-cc">
+				I am a
+				<span id="typing"></span>
+
+				<svg id="cursor" viewbox="0 0 10 100">
+					<rect x="0" y="0" width="10" height="100" stroke="none" />
+				</svg>
+
+			</h3>
+			<a href="#projects" id="cta-link" class="flex-cc">Checkout my projects <i class="fas fa-arrow-right"></i></a>
 		</section>
+
 		<section class="flex-cc col" id="projects">
-			<h1>Projects</h1>
+			<h1><i class="fas fa-briefcase"></i>Projects</h1>
 			<div id="project-grid">
 
-				<a href="https://codepen.io/hanumaukkadapu/full/gqWVgN" target="_blank" class="project-tile">
-					<img src="https://hanumaukkadapu.github.io/loadaFile2web/SB_WebProfile/FCC_P1.webp" class="project-img" alt="Screenshot of Tribute page">
+				<a href="https://codepen.io/hanumaukkadapu/full/gqWVgN" target="_blank" rel="noreferrer noopener" class="project-tile">
+					<img src="images/projects/FCC_P1.webp" class="project-img" alt="Screenshot of Tribute page">
 					<span class="img-caption">Tribute page</span>
 				</a>
 
-				<a href="https://codepen.io/hanumaukkadapu/full/mdbardX" target="_blank" class="project-tile">
-					<img src="https://hanumaukkadapu.github.io/loadaFile2web/SB_WebProfile/FCC_P4.webp" class="project-img" alt="Screenshot of Technical documentation page">
+				<a href="https://codepen.io/hanumaukkadapu/full/mdbardX" target="_blank" rel="noreferrer noopener" class="project-tile">
+					<img src="images/projects/FCC_P4.webp" class="project-img" alt="Screenshot of Technical documentation page">
 					<span class="img-caption">Technical documentation page</span>
 				</a>
 
-				<a href="https://codepen.io/hanumaukkadapu/full/pGGYxr" target="_blank" class="project-tile">
-					<img src="https://hanumaukkadapu.github.io/loadaFile2web/SB_WebProfile/FCC_P3.webp" class="project-img" alt="Screenshot of Product Launching page">
+				<a href="https://codepen.io/hanumaukkadapu/full/pGGYxr" target="_blank" rel="noreferrer noopener" class="project-tile">
+					<img src="images/projects/FCC_P3.webp" class="project-img" alt="Screenshot of Product Launching page">
 					<span class="img-caption">Product launching page</span>
 				</a>
 
-				<a href="https://codepen.io/hanumaukkadapu/full/eaOJEw" target="_blank" class="project-tile">
-					<img src="https://hanumaukkadapu.github.io/loadaFile2web/SB_WebProfile/Signin_up_form.webp" class="project-img" alt="Screenshot of Sign in form">
+				<a href="https://codepen.io/hanumaukkadapu/full/eaOJEw" target="_blank" rel="noreferrer noopener" class="project-tile">
+					<img src="images/projects/Signin_up_form.webp" class="project-img" alt="Screenshot of Sign in form">
 					<span class="img-caption">Sign in/Sign up form</span>
 				</a>
 
-				<a href="https://codepen.io/hanumaukkadapu/full/ErLXbv" target="_blank" class="project-tile">
-					<img src="https://hanumaukkadapu.github.io/loadaFile2web/SB_WebProfile/Google_like_form.webp" class="project-img" alt="Screenshot of Google like form">
+				<a href="https://codepen.io/hanumaukkadapu/full/ErLXbv" target="_blank" rel="noreferrer noopener" class="project-tile">
+					<img src="images/projects/Google_like_form.webp" class="project-img" alt="Screenshot of Google like form">
 					<span class="img-caption">Google like Form(Pure CSS)</span>
 				</a>
 
-				<a href="https://codepen.io/hanumaukkadapu/full/BEPYzB" target="_blank" class="project-tile">
-					<img src="https://hanumaukkadapu.github.io/loadaFile2web/SB_WebProfile/SVG_Loader_1.webp" class="project-img" alt="Screenshot of SVG Loader">
+				<a href="https://codepen.io/hanumaukkadapu/full/BEPYzB" target="_blank" rel="noreferrer noopener" class="project-tile">
+					<img src="images/projects/SVG_Loader_1.webp" class="project-img" alt="Screenshot of SVG Loader">
 					<span class="img-caption">SVG Loader-1(CSS)</span>
 				</a>
 			</div>
-			<a id="view-all" href="https://codepen.io/hanumaukkadapu" target="_blank"><strong>view all</strong> <i class="fas fa-chevron-right"></i></a>
+			<a id="view-all" href="https://codepen.io/hanumaukkadapu" target="_blank" rel="noreferrer noopener">view all <i class="fas fa-chevron-right"></i></a>
 		</section>
+
 		<section class="flex-cc col" id="education">
-			<h1>Education</h1>
+			<h1><i class="fas fa-university"></i>Education</h1>
+			<div class="wrapper">
+				<h4>Class X | 2013 - 2014</h4>
+				<div>
+					<ul>
+						<li>BSE AP</li>
+						<li>APRS Ganapavaram</li>
+						<li>CGPA - 9.2</li>
+					</ul>
+				</div>
+				<h4>Class XII | 2014 - 2016</h4>
+				<div>
+					<ul>
+						<li>BIE AP</li>
+						<li>APRJC Nagarjuna Sagar</li>
+						<li>Percentage - 97.8</li>
+					</ul>
+				</div>
+				<h4>Dual Degree( B,Tech. - M.Tech.)| 2016 - 2021</h4>
+				<div>
+					<ul>
+						<li>Electronics &amp; Telecommmunication Engineering</li>
+						<li>IIEST Shibpur</li>
+						<li>CGPA - 8.28</li>
+					</ul>
+				</div>
+			</div>
 		</section>
+
 		<section class="flex-cc col" id="skills">
-			<h1>Skillset</h1>
+			<h1><i class="fas fa-tools"></i>Skillset</h1>
+			<div class="wrapper">
+				<h4>Skills</h4>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li>C</li>
+					<li>MATLAB</li>
+					<li>SQL</li>
+				</ul>
+				<h4>Certifications</h4>
+				<ul>
+					<li> <a href="https://www.freecodecamp.org/certification/hanumaukkadapu/responsive-web-design" target="_blank" rel="noreferrer noopener">Responsive Web Design Certification | FreeCodeCamp</a> </li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="flex-cc col" id="about">
+			<h1><i class="fas fa-user-circle"></i>About</h1>
+			<div class="flex-cc wrapper">
+
+				<img id="my_photo" src="images/photo_1MB_2.png" alt="a passport photo">
+				<!--
+				https://avatars.githubusercontent.com/u/30723099
+				https://hanumaukkadapu.github.io/my_SB_profile/images/photo_1MB.png
+				-->
+				<div>
+					<h3>About Me</h3>
+					<p> Hey, This is Ukkadapu Tulasi Veera Hanuma, a student and a web enthusiast. I like to build webpages and I am keen to learn new stuff.</p>
+					<ul>
+						<li>DOB - 01/11/1998</li>
+					</ul>
+					<h4>Hobbies</h4>
+					<ul>
+						<li>Playing Badminton</li>
+					</ul>
+					<h4>Languages known</h4>
+					<ul>
+						<li>English, Hindi and Telugu</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
 	</main>
 
 	<footer id="contact" class="flex-cc">
 		<div class="flex-cc col">
-			<h4 class="flex-cc">Contact</h4>
+			<h4 class="flex-cc"><i class="fas fa-handshake"></i>Contact</h4>
 			<nav class="flex-cc">
 				<p>Interested to connect with me?</p>
 				<ul class="flex-cc">
-					<li>
-						<a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+					<li id="fb">
+						<a href="https://www.facebook.com/utv.hanuma/" title="Facebook" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li id="tw">
+						<a href="https://twitter.com/utvhanuma" title="Twitter" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter-square"></i></a>
+					</li>
+					<li id="tw">
+						<a href="https://in.linkedin.com/in/tulasi-veera-hanuma-ukkadapu-1bb04612a" title="LinkedIn" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+					</li>
+					<li id="gh">
+						<a href="https://github.com/HanumaUkkadapu" title="GitHub" target="_blank" rel="noreferrer noopener"><i class="fab fa-github-square"></i></a>
+					</li>
+					<li id="em">
+						<a href="mailto:utvhanuma@gmail.com" title="Email" target="_blank" rel="noreferrer noopener"><i class="fas fa-envelope-square"></i></a>
 					</li>
 					<li>
-						<a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-					</li>
-					<li>
-						<a href="#" title="GitHub"><i class="fab fa-github-square"></i></a>
-					</li>
-					<li>
-						<a href="#" title="Email"><i class="fas fa-envelope-square"></i></a>
-					</li>
-					<li>
-						<a href="#" title="Phone Number"><i class="fas fa-phone-square"></i></a>
+						<a href="tel:+919542642040" title="Phone Number" target="_blank" rel="noreferrer noopener"><i class="fas fa-phone-square"></i></a>
 					</li>
 				</ul>
 			</nav>
