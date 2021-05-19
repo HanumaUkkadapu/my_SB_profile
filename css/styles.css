@@ -30,7 +30,6 @@
 	--pht-brd-clr: rgba(0, 0, 0, 0.08);
 	--ftr-clr: #493548;
 	--ftr-nav-hvr-clr: rgba(255, 255, 255, 0.7);
-	--b2t-hvr-clr: #b1d59b;
 
 	/********/
 	--dur: 120ms;
@@ -581,30 +580,6 @@ footer #social_nav img:hover {
 		contrast(88%);
 }
 */
-
-/********************************************************/
-
-#back2Top {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	background: var(--b2t-bg);
-}
-#back2Top button {
-	width: 40px;
-	height: 40px;
-	color: var(--ftr-clr);
-	background: var(--b2t-bg);
-	border: 2px solid var(--ftr-clr);
-	border-radius: 4px;
-	font-size: 18px;
-	justify-content: center;
-}
-#back2Top button:hover,
-#back2Top button:focus {
-	background: var(--b2t-hvr-clr);
-}
 
 /********************************************************/
 /* Media Queries */
