@@ -286,7 +286,7 @@ header.flex-cc {
 }
 #menu:hover,
 #menu:focus {
-	background: var(--mn-hvr-bg);
+	background: rgba(0, 0, 0, 0.1);
 	outline: none;
 }
 #menu svg {
@@ -684,6 +684,13 @@ footer #social_nav img:hover {
 	#nav_el ul li a i {
 		display: inline;
 		margin-right: 10px;
+	}
+	#nav_el.open + #menu svg g {
+		fill: var(--nav-opn-clr);
+	}
+	#nav_el.open + #menu:hover,
+	#nav_el.open + #menu:focus {
+		background: var(--mn-hvr-bg);
 	}
 	/*
 	#signup_li {
