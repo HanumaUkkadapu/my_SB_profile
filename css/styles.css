@@ -668,7 +668,7 @@ footer #social_nav img:hover {
 		padding: min(2vh, 20px);
 	}
 	#nav_el ul li a {
-		background: var(--sec-h-bg);
+		color: var(--sec-h-bg);
 		padding: min(4vh, 30px);
 		font-size: 24px;
 		justify-content: center;
