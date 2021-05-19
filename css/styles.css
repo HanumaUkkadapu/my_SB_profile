@@ -18,7 +18,6 @@
 	--body-clr: black;
 	--hdr-bg: #91C16C;
 	--hdr-clr: black;
-	--nav-link-hvr-bg-1: rgba(0, 0, 0, 0.18);
 	--nav-link-brd-clr: rgba(0, 0, 0, 0.4);
 	--nav-opn-bg: rgba(226, 246, 214, 0.9);
 	--nav-link-hvr-bg-2: #91C16C;
@@ -169,10 +168,10 @@ header.flex-cc {
 	justify-content: center;
 }
 #nav_ul a:hover {
-	background: var(--nav-link-hvr-bg-1);
+	background: rgba(0, 0, 0, 0.18);
 }
 #nav_ul a:focus {
-	border-color: var(--nav-link-brd-clr);
+	border-color: rgba(0, 0, 0, 0.4);
 }
 #nav_ul a i {
 	display: none;
@@ -678,6 +677,9 @@ footer #social_nav img:hover {
 	}
 	#nav_el ul li a:hover {
 		background: var(--nav-link-hvr-bg-2);
+	}
+	#nav_el ul li a:focus{
+		border-color: var(--nav-link-brd-clr);
 	}
 	#nav_el ul li a i {
 		display: inline;
