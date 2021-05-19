@@ -337,6 +337,7 @@ section:not(#landing) > h1 i {
 	margin-right: 8px;
 }
 section:not(#landing) > h1 {
+	color: black;
 	background: var(--sec-h-bg);
 	margin-bottom: 8px;
 	padding: 3px 12px;
