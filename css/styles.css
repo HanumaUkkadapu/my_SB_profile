@@ -20,6 +20,7 @@
 	--hdr-clr: black;
 	--nav-link-brd-clr: rgba(0, 0, 0, 0.4);
 	--nav-opn-bg: rgba(226, 246, 214, 0.9);
+	--nav-opn-clr: black;
 	--nav-link-hvr-bg-2: #91C16C;
 	--mn-hvr-bg: rgba(0, 0, 0, 0.1);
 	--cta-hvr: brightness(1.06);
@@ -668,7 +669,7 @@ footer #social_nav img:hover {
 		padding: min(2vh, 20px);
 	}
 	#nav_el ul li a {
-		color: var(--sec-h-bg);
+		color: var(--nav-opn-clr);
 		padding: min(4vh, 30px);
 		font-size: 24px;
 		justify-content: center;
