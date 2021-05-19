@@ -74,7 +74,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"#b1d59b"
 		],
 		light: [
-			"#c5edac",
+			"#91C16C",
 			"#e2f6d6",
 			"black",
 			"#91C16C",
