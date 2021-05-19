@@ -20,6 +20,7 @@ let root,
 
 window.addEventListener("DOMContentLoaded", () => {
 	init();
+	/*
 	window.addEventListener("scroll", () => {
 		currYPos = root.scrollTop;
 		console.log(currYPos,prevYPos);
