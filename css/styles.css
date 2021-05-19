@@ -240,8 +240,7 @@ header.flex-cc {
 	left: 3px;
 	bottom: 3px;
 	border-radius: 50%;
-	color: #444;
-	background: white;
+	color: var(--acc-clr-2);
 	transition: var(--dur);
 
 	content: "\f185";
@@ -253,7 +252,7 @@ header.flex-cc {
 	justify-content: center;
 	align-items: center;
 }
-
+/*
 #switchInput:checked + .slider {
 	background: #ccc;
 	/*
@@ -261,8 +260,9 @@ header.flex-cc {
 		90deg,
 		hsl(210, 78%, 56%) 0%,
 		hsl(146, 68%, 55%) 100%
-	);*/
+	);
 }
+*/
 #switchInput:checked + .slider:before {
 	content: "\f186";
 	color: #eee;
