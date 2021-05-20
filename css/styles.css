@@ -539,6 +539,7 @@ footer div > * {
 footer div h4 {
 	width: auto;
 	font-size: 24px;
+	margin-bottom: 20px;
 	padding: 4px 16px;
 	background: var(--comm-bg);
 	border: 6px solid var(--ftr-clr);
@@ -624,7 +625,6 @@ footer #social_nav img:hover {
 
 	footer.flex-cc {
 		flex-flow: column nowrap;
-		align-items: center;
 	}
 	footer nav.flex-cc {
 		align-items: center;
@@ -718,6 +718,13 @@ footer #social_nav img:hover {
 	#typingWrap {
 		font-size: 24px;
 	}
+	
+	footer.flex-cc{
+		align-items: center;
+	}
+	footer div h4{
+		align-self: center;
+	}
 }
 
 /********************************************************/
@@ -731,8 +738,8 @@ footer #social_nav img:hover {
 		grid-template-columns: 1fr;
 	}
 
-	footer div h4.flex-cc {
-		justify-content: center;
+	footer div h4{
+		margin-bottom: 0;
 	}
 	footer nav {
 		flex-flow: column nowrap;
