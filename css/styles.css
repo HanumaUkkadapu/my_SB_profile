@@ -29,7 +29,6 @@
 	--prj-tl-ol-clr: rgba(22, 22, 22, 0.6);
 	--pht-brd-clr: rgba(0, 0, 0, 0.08);
 	--ftr-clr: #222;
-	--ftr-nav-hvr-clr: rgba(255, 255, 255, 0.7);
 
 	/********/
 	--dur: 120ms;
@@ -568,8 +567,7 @@ footer nav ul li a {
     transition: color 100ms ease-in-out;
 } */
 footer nav a:hover {
-	background: var(--ftr-nav-hvr-clr);
-	color: var(--blue-1);
+	background: white;
 }
 footer nav a:focus {
 	border-color: var(--nor);
