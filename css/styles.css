@@ -464,6 +464,7 @@ section:not(#landing) > h1 {
 }
 .project-img {
 	width: 100%;
+	height: auto;
 	border-bottom: 2px solid var(--body-clr);
 }
 .img-caption {
@@ -512,6 +513,7 @@ section:not(#landing) > h1 {
 
 img#my_photo {
 	max-height: 360px;
+	width: auto;
 	margin-right: 20px;
 	border: 1px solid var(--pht-brd-clr);
 	border-radius: 3px;
