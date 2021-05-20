@@ -80,7 +80,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"#cc9329",
 			"rgba(22, 22, 22, 0.6)",
 			"rgba(0, 0, 0, 0.08)",
-			"#493548",
+			"#222",
 			"rgba(255, 255, 255, 0.7)"
 		]
 	};
