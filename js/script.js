@@ -43,8 +43,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		"--cta-fcs-clr",
 		"--prj-tl-ol-clr",
 		"--pht-brd-clr",
-		"--ftr-clr",
-		"--ftr-nav-hvr-clr"
+		"--ftr-clr"
 	];
 	const theme = {
 		dark: [
@@ -62,8 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"#805c1a",
 			"rgba(255, 255, 255, 0.6)",
 			"rgba(255, 255, 255, 0.08)",
-			"#91C16C",
-			"#b1d59b"
+			"#91C16C"
 		],
 		light: [
 			"#91C16C",
@@ -80,8 +78,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			"#cc9329",
 			"rgba(22, 22, 22, 0.6)",
 			"rgba(0, 0, 0, 0.08)",
-			"#222",
-			"rgba(255, 255, 255, 0.7)"
+			"#222"
 		]
 	};
 	const swIp = document.getElementById("switchInput");
