@@ -28,7 +28,7 @@
 	--sec-h-bg: #91C16C;
 	--prj-tl-ol-clr: rgba(22, 22, 22, 0.6);
 	--pht-brd-clr: rgba(0, 0, 0, 0.08);
-	--ftr-clr: #493548;
+	--ftr-clr: #222;
 	--ftr-nav-hvr-clr: rgba(255, 255, 255, 0.7);
 
 	/********/
@@ -469,6 +469,10 @@ section:not(#landing) > h1 {
 }
 .img-caption {
 	padding: 10px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 2 1 auto;
 }
 #view-all {
 	padding: 8px 12px;
