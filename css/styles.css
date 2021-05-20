@@ -526,17 +526,24 @@ footer.flex-cc {
 	background: var(--comm-bg);
 	border-top: 6px solid var(--ftr-clr);
 	padding: 80px 10vw;
+	margin-top: 40px;
 	justify-content: stretch;
 	align-items: flex-start;
 }
 footer div {
-	width: 100%;
+	margin-top: -112px;
 }
 footer div > * {
 	margin: 0;
 }
 footer div h4 {
+	width: auto;
 	font-size: 24px;
+	padding: 4px 16px;
+	background: var(--comm-bg);
+	border: 6px solid var(--ftr-clr);
+	border-radius: 50px;
+	align-self: start;
 }
 footer div h4 i {
 	margin-right: 8px;
