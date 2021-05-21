@@ -468,7 +468,8 @@ section:not(#landing) > h1 > span{
 	transform: scale(1.03);
 }
 .project-tile:focus {
-	outline: 4px solid var(--prj-tl-ol-clr);
+	box-shadow: 0 0 0 4px var(--prj-tl-ol-clr);
+	outline: none;
 	text-decoration: underline;
 }
 .project-img {
