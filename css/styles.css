@@ -349,6 +349,10 @@ section:not(#landing) > h1 > span{
 	padding: 4px 16px;
 	border: 4px solid var(--ftr-clr);
 	border-radius: 60px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .wrapper {
