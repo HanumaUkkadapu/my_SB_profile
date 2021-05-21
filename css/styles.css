@@ -335,11 +335,20 @@ section:not(#landing) > h1 i {
 	margin-right: 8px;
 }
 section:not(#landing) > h1 {
-	color: black;
-	background: var(--sec-h-bg);
-	margin-bottom: 8px;
-	padding: 3px 12px;
-	border-radius: 2px;
+	color: var(--ftr-clr);
+	background: var(--ftr-clr);
+	margin-bottom: 30px;
+	height: 4px;
+	border-radius: 4px;
+	
+	display: flex;
+	align-items: center;
+}
+section:not(#landing) > h1 > span{
+	background: var(--comm-bg);
+	padding: 4px 16px;
+	border: 4px solid var(--ftr-clr);
+	border-radius: 60px;
 }
 
 .wrapper {
@@ -524,14 +533,14 @@ img#my_photo {
 footer.flex-cc {
 	color: var(--ftr-clr);
 	background: var(--comm-bg);
-	border-top: 6px solid var(--ftr-clr);
+	border-top: 4px solid var(--ftr-clr);
 	padding: 80px 10vw;
 	margin-top: 40px;
 	justify-content: stretch;
 	align-items: flex-start;
 }
 footer div {
-	margin-top: -112px;
+	margin-top: -110px;
 }
 footer div > * {
 	margin: 0;
@@ -542,7 +551,7 @@ footer div h4 {
 	margin-bottom: 20px;
 	padding: 4px 16px;
 	background: var(--comm-bg);
-	border: 6px solid var(--ftr-clr);
+	border: 4px solid var(--ftr-clr);
 	border-radius: 50px;
 	align-self: start;
 }
@@ -719,12 +728,6 @@ footer #social_nav img:hover {
 		font-size: 24px;
 	}
 	
-	footer.flex-cc{
-		align-items: center;
-	}
-	footer div h4{
-		align-self: center;
-	}
 }
 
 /********************************************************/
@@ -733,13 +736,20 @@ footer #social_nav img:hover {
 	body {
 		font-size: 16px;
 	}
+	
+	section:not(#landing) > h1{
+		justify-content: center;
+	}
 
 	#project-grid {
 		grid-template-columns: 1fr;
 	}
-
+  footer.flex-cc{
+		align-items: center;
+	}
 	footer div h4{
 		margin-bottom: 0;
+		align-self: center;
 	}
 	footer nav {
 		flex-flow: column nowrap;
