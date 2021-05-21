@@ -110,7 +110,7 @@ footer {
 	padding: 0 10vw;
 }
 section {
-	margin: 20px 10vw;
+	margin: 20px 10vw 10px 10vw;
 	padding: 10px 0;
 	/*border: 1px solid #ddd;
 	border-radius: 4px;*/
@@ -337,7 +337,7 @@ section:not(#landing) > h1 i {
 section:not(#landing) > h1 {
 	color: var(--ftr-clr);
 	background: var(--ftr-clr);
-	margin-bottom: 30px;
+	margin: 30px 0 40px 0;
 	height: 4px;
 	border-radius: 4px;
 	
