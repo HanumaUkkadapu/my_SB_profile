@@ -742,6 +742,11 @@ footer #social_nav img:hover {
 		font-size: 16px;
 	}
 	
+	
+	section {
+    		margin: 20px 7vw 10px 7vw;
+	}
+	
 	section:not(#landing) > h1{
 		justify-content: center;
 	}
