@@ -384,6 +384,9 @@ section:not(#landing) > h1 > span{
 	justify-content: center;
 	align-items: center;
 }
+#landing .wrapper span.special{
+	color: var(--acc-clr-2);
+}
 #land-head {
 	font-size: 72px;
 	font-weight: 700;
