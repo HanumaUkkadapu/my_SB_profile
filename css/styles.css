@@ -405,7 +405,7 @@ section:not(#landing) > h1 > span{
 	animation: blink 500ms infinite alternate;
 }
 #cursor rect {
-	fill: var(--body-clr);
+	fill: white;
 }
 @keyframes blink {
 	0%,
