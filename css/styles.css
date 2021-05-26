@@ -110,8 +110,7 @@ footer {
 	padding: 0 10vw;
 }
 section {
-	margin: 20px 10vw 10px 10vw;
-	padding: 10px 0;
+	padding: 20px 10vw 10px 10vw;
 	/*border: 1px solid #ddd;
 	border-radius: 4px;*/
 }
@@ -368,13 +367,22 @@ section:not(#landing) > h1 > span{
 /********************************************************/
 
 #landing {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 80px);
 	border: none;
-	justify-content: center;
-	align-items: center;
+	padding: 0;
+	color: white;
+	background: url('../images/hero_img.webp') bottom left no-repeat;
 }
 #landing > * {
 	text-align: center;
+}
+#landing .wrapper{
+	height: 100%;
+	padding: 10px 24px;
+	background: rgba(0,0,0,0.4);
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
 }
 #land-head {
 	font-size: 72px;
@@ -413,7 +421,7 @@ section:not(#landing) > h1 > span{
 	background: var(--acc-clr-2);
 	border: 4px solid var(--acc-clr-2);
 	padding: 10px 22px 10px 20px;
-	margin-top: 20px;
+	margin: 20px 0;
 	font-family: "Poppins", sans-serif;
 	font-size: 18px;
 	font-weight: 600;
@@ -744,7 +752,7 @@ footer #social_nav img:hover {
 	
 	
 	section {
-    		margin: 20px 7vw 10px 7vw;
+    		padding: 20px 7vw 10px 7vw;
 	}
 	
 	section:not(#landing) > h1{
