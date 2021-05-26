@@ -375,6 +375,7 @@ section:not(#landing) > h1 > span{
 	border: none;
 	padding: 0;
 	color: white;
+	background-color: var(--body-bg);
 	background: url('../images/hero_img.webp') bottom left no-repeat;
 }
 #landing > * {
