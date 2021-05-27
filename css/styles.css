@@ -363,7 +363,7 @@ section:not(#landing) > h1 > span{
 }
 .wrapper h4 {
 	margin: 10px 0 5px 0;
-	font-size: 21px;
+	font-size: 20px;
 }
 .wrapper h4:first-child {
 	margin-top: 0;
